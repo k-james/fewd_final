@@ -1,0 +1,288 @@
+
+/*BODY*/
+html{
+    min-height:100%;
+    margin:auto;
+}
+body{
+    height:100%;
+    font-size: 1.25em;
+    margin: 0 auto;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    background-color:#fff;
+    line-height: 1.7rem;
+}
+
+/*ADDITIONAL CLASSES*/
+:focus {
+	outline: 0;
+}
+
+/*GROW on hover*/
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.4); }
+
+/*Some elements that are clickable mysteriously don't trigger a pointer cursor in browsers. This fixes that, and provides a default class "pointer" for applying it to other clickable things as needed*/
+a[href], input[type='submit'], input[type='image'], label[for], select, button,[type="checkbox"],
+ [type="radio"], .pointer {
+       cursor: pointer;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2{
+    font-size: 1.8em;
+}
+h3{
+    font-size: 1.4em;
+}
+
+hr {
+  height: 0; 
+  overflow: visible;
+}
+
+a {
+  background-color: transparent;  
+}
+
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted; 
+  cursor: help; 
+  border-bottom: 0; 
+}
+
+article,
+aside,
+footer,
+figcaption,
+figure,
+footer,
+hgroup,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+blockquote {
+  margin: 0 0 1rem;    
+}
+
+details,
+menu {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+footer{
+    height: 40px;
+    width: 100%;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+blockquote{
+    quotes: "";
+    margin:1.5em 10px;
+    padding:.5em 10px;
+    font-style: italic;
+    font-weight: 400;
+}
+q:before, 
+q:after, 
+blockquote:before, 
+blockquote:after {
+  content: close-quote;
+}
+
+summary {
+  display: list-item;
+}
+
+/*MEDIA*/
+img{
+    max-width: 100%;
+    height: auto;
+    border-style:none; 
+    vertical-align: middle;
+    outline: #dedede dotted;}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+caption{
+    text-align: left; 
+    caption-side: bottom;}
+
+
+/*GRID*/
+/*hidden Removes an item from the page, without affecting page flow or causing scrollbars. Much better than display: none; or even visibility: hidden*/
+[hidden]{
+    position: absolute;
+    top:-9999px;
+    left:-9999px;
+}
+
+/*  SECTIONS splits up the page horizontally. You'll need a few of these to break up the content, and you can use them in your main wrapper, or within other divs.  */
+section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  divides the section into columns. Each column has a left margin except the first one. Using .col:first-child { margin-left: 0; } means you don't need to use class="last" anywhere. It works in all browsers since IE6.*/
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.16%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  solves floating problems, by forcing the section to self clear its children (aka the clearfix hack). This is good in Firefox 3.5+, Safari 4+, Chrome, Opera 9+ and IE 6+.*/
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWELVE  specifies the width of the column. Using percentages means it's 100% fluid.*/
+.col-12-12 {
+	width: 100%;
+}
+
+.col-11-12 {
+  	width: 91.53%;
+}
+.col-10-12 {
+  	width: 83.06%;
+}
+
+.col-9-12 {
+  	width: 74.6%;
+}
+
+.col-8-12 {
+  	width: 66.13%;
+}
+
+.col-7-12 {
+  	width: 57.66%;
+}
+
+.col-6-12 {
+  	width: 49.2%;
+}
+
+.col-5-12 {
+  	width: 40.73%;
+}
+
+.col-4-12 {
+  	width: 32.26%;
+}
+
+.col-3-12 {
+  	width: 23.8%;
+}
+
+.col-2-12 {
+  	width: 15.33%;
+}
+
+.col-1-12 {
+  	width: 6.866%;
+}
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS @media queries as soon as the screen size gets less than 480 pixels the columns stack and the margins disappear.*/
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+    
+    .col-1-12, .col-2-12, .col-3-12, .col-4-12, .col-5-12, .col-6-12, .col-7-12, .col-8-12, .col-9-12, .col-10-12, .col-11-12, .col-12-12 {
+	width: 100%; 
+	}
+}
+
+
+/*TABLE*/
+th{text-align: left;}
+
+table{border-collapse: collapse;}
+
+/*FORMS*/
+fieldset{border:0; padding:0.35 0.75em 0.625em; margin:0;}
+
+button, 
+input, 
+optgroup, 
+select, 
+textarea {font-size: 100%; line-height: 1.15; margin:0;}
+
+button:focus {}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; 
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+    outline-offset: -2px;
+    border-radius: 10px;
+    height:1.6em;
+    
+}
+
+
+ol,
+ul{margin-top: 0; margin-bottom: 1rem; list-style: none;}
+
+
+/*CODE*/
+code, kbd, samp{font-family: monospace; font-size: 1em;}
+
+pre{margin-top: 0; margin-bottom: .5rem; font-size: 1em;}
+
+
+/*BREAKPOINTS*/
+
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+}

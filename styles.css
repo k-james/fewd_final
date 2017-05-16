@@ -1,0 +1,56 @@
+
+html{
+    font-size: 16px;
+}
+body{
+    font-size: 1rem;
+    margin:0;
+    font-family:
+/* 1 */ -apple-system, BlinkMacSystemFont,
+/* 2 */ "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+/* 3 */ "Helvetica Neue", sans-serif;
+    background-color:#fff;
+    line-height: 
+}
+
+/*CONTENT*/
+h1{2em; margin:0.67em 0;}
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl{margin-top:0;}
+h1, h2, h3, h4, h5, h6{margin-bottom:.5rem;}
+p,ul, ol, dl{margin-bottom: 1rem;}
+a{background-color: transparent;}
+address{margin-bottom: 1rem; font-style: normal; line-height: inherit;}
+b, strong{font-weight: bolder;}
+abbr[title]{border-bottom: none; text-decoration: underline dotted; cursor:help;}
+blockquote{margin:0 0 1rem;}
+
+canvas{display: inline;}
+
+
+dd{margin-left:0; margin-bottom:.5rem;}
+details, menu{display:block;}
+dfn{font-style: italic;}
+dt{font-weight: 400;}
+
+figcaption, figure, main{display:block;}
+figure{margin: 1em 40px;}
+hr{box-sizing: content-box; height: 0; overflow: visible;}
+[hidden]{display: none;}
+
+legend{margin-top:0; margin-bottom: .5rem; box-sizing: border-box; color: inherit; max-width: 100%; padding:0; white-space: normal;}
+small{font-size: 80%;}
+sub, sup{font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+summary{display: list-item;}
+template{display: none;}
+
+/*FORMS*/
+ol,ul,dl{margin-top: 0; margin-bottom: 1rem;}
+ol ol, ul ul, ol ul, ul ol{margin-bottom: 0;}
+
+/*TABLE*/
+
+
+/*MEDIA*/
+audio, video{display: inline-block;}
+img{border-style:none; vertical-align: middle; border-style: none;}
+
