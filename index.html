@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link href="styles2.css" rel="stylesheet">
+    <link href="final_styles.css" rel="stylesheet">
 </head>
 <body>
    <nav>
@@ -40,42 +40,55 @@
     </div>
 </section>
 <section>
+   <!--      <div class='ez-form-info'>Required fileds are marked with an asterisk (*)</div>    -->
+
     <form class="group" style="background-color:#dedede">
         <fieldset>
             <div class="col col-4-12">
-                <h4>FORM</h4>
-                <label>input type="search"</label>
-                <input type="search">
-                <label>input type="checkbox"</label>
-                <input type="checkbox">
-                <label>input type="radio"</label>
-                <input type="radio">
+                <legend>Personal Information</legend>
+          
+                  <label for='firstName'>First Name <span>(Required)</span> </label>
+                  <input type='text' name='firstName' placeholder='John'>
+                  <div class='ez-form-clear'></div>
+
+                  <label for='lastName'>Last Name <span>(Required)</span></label>
+                  <input type='text' name='lastName' placeholder='Doe'>
             </div>
            <div class="col col-4-12">
-               <label>input type="text"</label>
-                <input type="text">
-                <label>input type="email"</label>
-                <input type="email">
-                <label>input type="tel"</label>
-                <input type="tel">
-                <label>input type="date"</label>
-                <input type="date">
-                <label>input type="month"</label>
-                <input type="month">
-                <label>input type="number"</label>
-                <input type="number">
-                <label>input type="range"</label>
-                <input type="range">
+               <legend>Contact Information</legend>
+                  <label for='email'>Email <span class='ez-form-span-mobile'>*</span> <span class='ez-form-span-desktop'>(Required)</span> </label>
+                  <input type='text' name='email' placeholder='johnDoe@gmail.com'>
+                  <div class='ez-form-clear'></div>
+
+                  <label for='telephone'>Telephone </label>
+                  <input type='text' name='telephone' placeholder='555.554.6786'>
+                  <div class='ez-form-clear'></div>
+
+                  <label for='contact'>Prefered Contact</label>
+                  <input type='radio' name='contact' value='email'>Email
+                  <input type='radio' name='contact' value='phone'>Phone
+                  <div class='ez-form-clear'></div>
+
+                  <label>Reason for Contact </label>
+                  <select class='ez-form-select'>
+                     <option value='selectOne'>Select One</option>
+                     <option value='career'>Career Opportunities</option>
+                     <option value='volunteer'>Volunteer work</option>
+                  </select>
+                  <div class='ez-form-clear'></div>
             </div>
             <div class="col col-4-12">
-                 <label>textarea</label>
-                <textarea></textarea>
-                <label>input type="submit"</label>
-                <input type="submit">
-                 <label>input type="reset"</label>
-                <input type="reset">
-                <label>button/.grow</label>
-                <button class="grow">CLICK</button>
+                <legend>Other Information</legend> 
+                 <label for=interest>I am interested in </label>
+                      <input type='checkbox' name='interest'>HTML
+                      <input type='checkbox' name='interest'>CSS
+                      <input type='checkbox' name='interest'>javaScript
+                      <input type='checkbox' name='interest'>jQuery
+                  <div class='ez-form-clear'></div>
+                  <label for='comments'>Comments</label>
+                  <textarea placeholder='Thank you for visiting our site'></textarea>
+
+                  <input type='submit' value='Submit'>
             </div>
             
         </fieldset>
