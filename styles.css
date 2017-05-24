@@ -1,4 +1,5 @@
 
+
 /*BODY*/
 
 
@@ -16,6 +17,10 @@ body{
     background-color:#fff;
     line-height: 1.7rem;
 }
+body, 
+select, 
+input, 
+textarea {color: #333;}
 
 /*   --- HELPER CLASSES: ----*/
 /*.hide/display:none class makes content "inaccessible" by screen readers. Hide class should position the content off screen, which still leaves it screen reader accessible */
@@ -103,8 +108,12 @@ hr {
 }
 
 a {
-  background-color: transparent;  
-}
+    background-color: transparent;  
+    color: #03f;}
+
+a:hover {
+    color: #69f;}
+
 
 
 abbr[title] {
@@ -163,6 +172,7 @@ q:after,
 blockquote:after {
     top: 0;
     right: 0;
+    font-family: "FontAwesome";
     content: "\201D";
 }
 
