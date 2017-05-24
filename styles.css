@@ -109,15 +109,15 @@ hr {
 
 a {
     background-color: transparent;  
-    color: #03f;}
+    color: #2273AA;}
 
 a:hover {
-    color: #69f;}
+    color: #15486A;}
 
 
 
 abbr[title] {
-  border-bottom: 1px dotted #777; 
+  border-bottom: 1px dotted #E74E4E; 
   cursor: help; 
 }
 
@@ -260,30 +260,33 @@ dd {
 .text-capitalized{text-transform: capitalize;}
 /* ----------- VALIDATION/CONTEXTUAL CLASSES -----*/
 /*Applies the hover color to a particular row or cell*/
-.active{}
+.active{color:}
 /*Indicates a neutral informative change or action*/
-.info
+.info{color:#2273AA;}
 /*Indicates a successful or positive action*/
-.success{}
+.success{color:#2DAA32;}
 /*Indicates a warning that might need attention*/
-.warning{}
+.warning{color:#F6F525;}
 /*Indicates a dangerous or potentially negative action*/
-.danger{}
+.danger{color: #B73837;}
 
-.text-info{color:;}
-a.text-info{color:;}
+.text-info{color:#15486A;}
+a.text-info{color:#15486A;}
 a.text-info:hover,
-a.text-info:focus{color:#245269;}
-.bg-info{color:#fff; background-color:#337ab7;}
+a.text-info:focus{color:#15486A;}
+.bg-info{color:#fff; background-color:#2273AA;}
 a.bg-info:hover,
 a.bg-info:focus {
-  background-color: #286090;
+  background-color: #15486A;
 }
 
-
-.btn-info{}
-.label-info{}
-.alert{}
+.btn-info{color: #dedede; background-color:#2273AA;}
+.btn-success{color: #dedede;background-color:#2DAA32;}
+.btn-warning{color: #dedede;background-color:#F6F525;}
+.btn-danger{color: #dedede;background-color:#B73837;}
+.alert{
+    background-color: #B73837;
+    color:#fff;}
 
 /* -------- MEDIA -------*/
 /*********************    START OF RESPONSIVE IMAGES STYLES    **********************/
@@ -810,7 +813,7 @@ pre code {
   border-radius: 0;
 }
 
-var{}
+
 
 /* --------- BREAKPOINTS ----------*/
 

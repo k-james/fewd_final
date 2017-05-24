@@ -119,11 +119,38 @@
                       <i class="fa fa-envelope" aria-hidden=”true”></i> Email Us!
                     </button>
                   </div>
-</section>    
+</section> 
+<section>
+    <div id="player"></div>
+</section>   
 <hr>      
 <footer style="background-color:#dedede"><h4>Footer</h4>
 </footer>
 
-        
+<script>
+    (function() {
+        var script = document.createElement("script");
+
+        script.type = "text/javascript";
+        script.async = true;
+        script.src = "//sd.toneden.io/production/v2/toneden.loader.js";
+
+        var entry = document.getElementsByTagName("script")[0];
+        entry.parentNode.insertBefore(script, entry);
+    }());
+
+    ToneDenReady = window.ToneDenReady || [];
+    ToneDenReady.push(function() {
+        // Modify the dom and urls parameters to position
+        // your player and select tracks/sets/artists to play.
+        ToneDen.player.create({
+            dom: "#player",
+            urls: [
+                "https://soundcloud.com/giraffage"
+            ]
+        });
+    });
+</script>
+      
 </body>
 </html>
